@@ -23,6 +23,14 @@ namespace ArchitectureScript.Parsing
             return new RelationshipSegmentWalker(relationship);
         }
 
+        [Parse("user (.*)")]
+        public RelationshipSegmentWalker AddUser(string tag)
+        {
+            var user = _element.Model.GetElementByName(tag);
+            var relationship = user.AddRelationship(_element.Name, null);
+            return new RelationshipSegmentWalker(relationship);
+        }
+
         [Parse("desc (.*)")]
         public void SetDescription(string description)
         {
