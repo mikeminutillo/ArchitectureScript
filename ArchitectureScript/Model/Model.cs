@@ -41,7 +41,7 @@ namespace ArchitectureScript.Model
             var system = new SoftwareSystem
             {
                 Id = GetId(),
-                Location = location == "external" ? "External" : "Internal",
+                Location = location,
                 Name = name,
                 Model = this
             };
@@ -62,7 +62,7 @@ namespace ArchitectureScript.Model
             var person = new Person
             {
                 Id = GetId(),
-                Location = location == "external" ? "External" : "Internal",
+                Location = location,
                 Name = name,
                 Model = this
             };
