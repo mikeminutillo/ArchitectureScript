@@ -48,7 +48,7 @@
     <Compile Include="Model\Component.cs" />
     <Compile Include="Model\ComponentView.cs" />
     <Compile Include="Parsing\ComponentSegmentWalker.cs" />
-    <Compile Include="Parsing\ComponentViewSegmentWalker.cs" />
+    <Compile Include="Parsing\ViewSegmentWalker.cs" />
     <Compile Include="Parsing\ContainerSegmentWalker.cs" />
     <Compile Include="Parsing\ElementSegmentWalker.cs" />
     <Compile Include="Parsing\ISegmentWalker.cs" />
